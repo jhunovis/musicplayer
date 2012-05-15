@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MusicPlayerActivity!</string>
+    <string name="app_name">Music Player</string>
+    <string name="songtitle_dummy">Song Title</string>
+    <string name="album_dummy">Album Title</string>
+    <string name="artist_dummy">Performer</string>
+</resources>
