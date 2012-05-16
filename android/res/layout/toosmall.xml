@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This version of the layout references an 100x100 image that is to small in width
+for an WVGA800 device like the Samsung Galaxy S2 (480px width).
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.00" >
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/artist_dummy" android:layout_marginLeft="4px"/>
+
+        <TextView
+            android:id="@+id/albumartistsep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/artist"
+            android:text="/" />
+
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/albumartistsep"
+            android:text="@string/album_dummy" />
+
+        <TextView
+            android:id="@+id/songtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/artist"
+            android:text="@string/songtitle_dummy"
+            android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignLeft="@id/artist"/>
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/songtitle"
+            android:src="@drawable/toosmall" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cover" />
+    </RelativeLayout>
+
+</LinearLayout>
