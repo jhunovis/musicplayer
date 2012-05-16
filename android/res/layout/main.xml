@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+
+            android:layout_below="@id/cover" 
+
+ -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/root_layout"
     android:layout_width="match_parent"
@@ -43,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/songtitle"
-            android:src="@drawable/cd" />
+            android:src="@drawable/defaultcover" />
 
         <SeekBar
             android:id="@+id/seekBar"
