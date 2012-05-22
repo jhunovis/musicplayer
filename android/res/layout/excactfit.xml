@@ -3,71 +3,66 @@
 This version of the layout references an image that has exactly the width of an WVGA800 device
 like the Samsung Galaxy S2, i.e. 480px.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_weight="1.00" >
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4px"
+        android:text="@string/artist_dummy" />
+
+    <TextView
+        android:id="@+id/albumartistsep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/artist"
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/albumartistsep"
+        android:text="@string/album_dummy" />
+
+    <TextView
+        android:id="@+id/songtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1.00" >
+        android:layout_alignLeft="@id/artist"
+        android:layout_below="@id/artist"
+        android:text="@string/songtitle_dummy"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
-        <TextView
-            android:id="@+id/artist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="4px"
-            android:text="@string/artist_dummy" />
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/songtitle"
+        android:src="@drawable/excactfit" />
 
-        <TextView
-            android:id="@+id/albumartistsep"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/artist"
-            android:text="/" />
+    <ImageView
+        android:id="@+id/border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cover"
+        android:layout_alignLeft="@id/cover"
+        android:layout_alignRight="@id/cover"
+        android:layout_alignTop="@id/cover"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:src="@drawable/border" />
 
-        <TextView
-            android:id="@+id/album"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/albumartistsep"
-            android:text="@string/album_dummy" />
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cover" />
 
-        <TextView
-            android:id="@+id/songtitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@id/artist"
-            android:layout_below="@id/artist"
-            android:text="@string/songtitle_dummy"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-
-        <ImageView
-            android:id="@+id/cover"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/songtitle"
-            android:src="@drawable/excactfit" />
-
-        <ImageView
-            android:id="@+id/border"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/cover"
-            android:layout_alignLeft="@id/cover"
-            android:layout_alignRight="@id/cover"
-            android:layout_alignTop="@id/cover"
-            android:adjustViewBounds="true"
-            android:scaleType="center"
-            android:src="@drawable/border" />
-        
-        <SeekBar
-            android:id="@+id/seekBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/cover" />
-    </RelativeLayout>
-
-</LinearLayout>
+</RelativeLayout>

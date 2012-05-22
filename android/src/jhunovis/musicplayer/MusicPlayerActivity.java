@@ -15,7 +15,8 @@ public class MusicPlayerActivity extends Activity {
 	public static final String TAG = "MusicPlayer";
 	private GestureDetector gestureDetector;
 	private float verticalFlipThreshold;
-	private static final int[] LAYOUTS = {R.layout.toosmall,
+	private static final int[] LAYOUTS = {R.layout.bitmapgravitytest,
+		R.layout.toosmall,
 		R.layout.excactfit,
 		R.layout.toolarge,
 	};
