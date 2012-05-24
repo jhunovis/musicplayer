@@ -45,6 +45,7 @@ for an WVGA800 device like the Samsung Galaxy S2 (480px width).
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/songtitle"
+        android:adjustViewBounds="true"
         android:src="@drawable/toolarge" />
 
     <ImageView
