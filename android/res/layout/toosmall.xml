@@ -46,9 +46,9 @@ for an WVGA800 device like the Samsung Galaxy S2 (480px width).
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/songtitle"
-        android:scaleType="fitXY"
+        android:scaleType="fitStart"
         android:src="@drawable/toosmall" />
-
+<!--
     <ImageView
         android:id="@+id/border"
         android:layout_width="wrap_content"
@@ -60,7 +60,8 @@ for an WVGA800 device like the Samsung Galaxy S2 (480px width).
         android:adjustViewBounds="true"
         android:scaleType="center"
         android:src="@drawable/border" />
-
+  -->
+  
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="match_parent"

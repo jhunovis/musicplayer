@@ -6,4 +6,7 @@
     <string name="songtitle_dummy">Song Title</string>
     <string name="album_dummy">Album Title</string>
     <string name="artist_dummy">Performer</string>
+    <string name="music_player_started">Let the music play!</string>
+    <string name="music_player_stopped">Stopped playback.</string>
+    <string name="service_description">A simple music player.</string>
 </resources>

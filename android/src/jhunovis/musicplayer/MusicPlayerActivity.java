@@ -15,7 +15,7 @@ public class MusicPlayerActivity extends Activity {
 	public static final String TAG = "MusicPlayer";
 	private GestureDetector gestureDetector;
 	private float verticalFlipThreshold;
-	private static final int[] LAYOUTS = {R.layout.bitmapgravitytest,
+	private static final int[] LAYOUTS = {
 		R.layout.toosmall,
 		R.layout.excactfit,
 		R.layout.toolarge,
@@ -84,6 +84,7 @@ public class MusicPlayerActivity extends Activity {
 		currentLayout = currentLayout==0 ? LAYOUTS.length-1 : currentLayout-1;
 		setContentView(LAYOUTS[currentLayout]);		
 	}
+	
 	
 	// public void onResume(){
 	// super.onResume();

@@ -18,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:exported="false" android:name=".MusicPlayer" android:label="Music Player" android:description="@string/service_description"></service>
     </application>
 
 </manifest>
